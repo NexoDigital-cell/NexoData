@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d19">
+  <meta name="description" content="NexoData transforma datos en información útil mediante dashboards, análisis de datos y reportes para negocios.">
+  <title>NexoData | Inteligencia en tus datos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">N<span>D</span></span>
+        <span>Nexo<span class="blue">Data</span><small>DATA SOLUTIONS</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#soluciones">Soluciones</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto" class="nav-cta">Hablemos <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          DATOS QUE IMPULSAN NEGOCIOS
+        </div>
+
+        <h1>
+          Tus datos tienen<br>
+          algo que decir.<br>
+          <span class="gradient-text">Vamos a descubrirlo.</span>
+        </h1>
+
+        <p class="hero-description">
+          Convertimos hojas de cálculo y datos desorganizados en
+          información clara para ayudarte a entender tu negocio,
+          detectar oportunidades y tomar mejores decisiones.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">
+            Impulsa tu negocio <span>↗</span>
+          </a>
+          <a href="#servicios" class="btn btn-secondary">
+            Explorar servicios <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="check">✓</span>
+          Soluciones prácticas para negocios y emprendedores.
+        </div>
+      </div>
+
+      <div class="dashboard-window">
+        <div class="window-top">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>nexodata / business-overview</span>
+          <span class="live-label"><i></i> DEMO</span>
+        </div>
+
+        <div class="dashboard-body">
+          <div class="dash-heading">
+            <div>
+              <span class="muted-label">PANEL DE NEGOCIO</span>
+              <h3>Resumen general</h3>
+            </div>
+            <span class="period">Ejemplo ilustrativo⌄</span>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <span>Ingresos</span>
+              <strong>$24,850</strong>
+              <small class="positive">↗ 12.4%</small>
+            </div>
+            <div class="metric">
+              <span>Pedidos</span>
+              <strong>186</strong>
+              <small class="positive">↗ 8.2%</small>
+            </div>
+            <div class="metric">
+              <span>Ticket promedio</span>
+              <strong>$133.60</strong>
+              <small>Por pedido</small>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <span class="muted-label">RENDIMIENTO</span>
+                <h4>Ingresos por periodo</h4>
+              </div>
+              <span class="chart-legend"><i></i> Ingresos</span>
+            </div>
+
+            <div class="chart-area">
+              <div class="y-labels">
+                <span>30k</span><span>20k</span>
+                <span>10k</span><span>0</span>
+              </div>
+              <svg viewBox="0 0 440 155" class="chart-svg"
+                role="img" aria-label="Gráfica ilustrativa de ingresos">
+                <defs>
+                  <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#3984ff" stop-opacity=".35"/>
+                    <stop offset="100%" stop-color="#3984ff" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <g class="grid-lines">
+                  <path d="M0 15 H440 M0 55 H440 M0 95 H440 M0 135 H440"/>
+                </g>
+                <path d="M0 120 L55 95 L110 105 L165 65 L220 80 L275 43 L330 58 L385 20 L440 32 L440 145 L0 145 Z"
+                  fill="url(#areaFill)"/>
+                <path d="M0 120 L55 95 L110 105 L165 65 L220 80 L275 43 L330 58 L385 20 L440 32"
+                  class="chart-line"/>
+                <circle cx="385" cy="20" r="5" class="chart-point"/>
+              </svg>
+            </div>
+            <div class="x-labels">
+              <span>Sem. 1</span><span>Sem. 2</span>
+              <span>Sem. 3</span><span>Sem. 4</span>
+            </div>
+          </div>
+
+          <div class="insight">
+            <div class="insight-icon">↗</div>
+            <div>
+              <strong>Una mejor perspectiva</strong>
+              <p>Visualiza tus resultados y encuentra patrones.</p>
+            </div>
+          </div>
+          <p class="demo-disclaimer">
+            Datos ficticios. Esta vista es una demostración del diseño,
+            no un resultado de un cliente real.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-glow"></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-inner">
+        <span>INFORMACIÓN MÁS CLARA</span>
+        <span class="trust-divider"></span>
+        <span>REPORTES MÁS ÚTILES</span>
+        <span class="trust-divider"></span>
+        <span>DECISIONES MEJOR INFORMADAS</span>
+      </div>
+    </section>
+
+    <section class="section container" id="servicios">
+      <div class="section-heading">
+        <div class="eyebrow">QUÉ HACEMOS</div>
+        <h2>De datos dispersos a<br><span class="gradient-text">decisiones inteligentes.</span></h2>
+        <p>Soluciones diseñadas para que aproveches la información que
+          ya genera tu negocio.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon blue-icon">▥</div>
+          <span class="card-number">01 / VISUALIZACIÓN</span>
+          <h3>Dashboards</h3>
+          <p>Paneles visuales para consultar ventas, gastos, inventarios
+            y otros indicadores importantes en un solo lugar.</p>
+          <div class="tag-list"><span>Google Sheets</span><span>Gráficas</span></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon purple-icon">⌘</div>
+          <span class="card-number">02 / ANÁLISIS</span>
+          <h3>Análisis de datos</h3>
+          <p>Organizamos la información, identificamos tendencias y
+            detectamos oportunidades para entender mejor los resultados.</p>
+          <div class="tag-list"><span>Python</span><span>Pandas</span></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon cyan-icon">▤</div>
+          <span class="card-number">03 / REPORTES</span>
+          <h3>Reportes de negocio</h3>
+          <p>Informes claros sobre ventas, rendimiento y operaciones
+            para que sepas qué está pasando en tu negocio.</p>
+          <div class="tag-list"><span>Excel</span><span>Google Sheets</span></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon green-icon">⟳</div>
+          <span class="card-number">04 / EFICIENCIA</span>
+          <h3>Automatización de tareas</h3>
+          <p>El siguiente paso para reducir tareas repetitivas, ordenar
+            procesos y dedicar menos tiempo al trabajo manual.</p>
+          <div class="tag-list"><span>Python</span><span>Procesos</span></div>
+        </article>
+      </div>
+      <p class="section-footnote">
+        Los servicios se ofrecen según su alcance y las herramientas
+        disponibles para cada proyecto.
+      </p>
+    </section>
+
+    <section class="solutions-section" id="soluciones">
+      <div class="container solutions-layout">
+        <div class="solutions-copy">
+          <div class="eyebrow">SOLUCIONES PARA TU NEGOCIO</div>
+          <h2>Entiende lo que<br>está pasando en<br><span class="gradient-text">tu empresa.</span></h2>
+          <p>No necesitas una infraestructura complicada para empezar
+            a utilizar tus datos. Podemos comenzar con tus hojas de
+            cálculo y construir una solución a tu medida.</p>
+          <a href="#contacto" class="text-link">Cuéntanos tu idea <span>→</span></a>
+        </div>
+
+        <div class="use-cases">
+          <article class="use-case">
+            <div class="use-case-icon">▦</div>
+            <div><h3>Ventas y rendimiento</h3>
+              <p>Conoce tus productos más vendidos, compara periodos
+                y revisa tus ingresos.</p></div>
+            <span class="case-arrow">↗</span>
+          </article>
+          <article class="use-case">
+            <div class="use-case-icon">▣</div>
+            <div><h3>Control de inventario</h3>
+              <p>Organiza existencias, movimientos y productos con
+                mayor demanda.</p></div>
+            <span class="case-arrow">↗</span>
+          </article>
+          <article class="use-case">
+            <div class="use-case-icon">◷</div>
+            <div><h3>Tiempo y productividad</h3>
+              <p>Identifica tareas repetitivas y oportunidades para
+                simplificar procesos.</p></div>
+            <span class="case-arrow">↗</span>
+          </article>
+          <article class="use-case">
+            <div class="use-case-icon">⌁</div>
+            <div><h3>Datos organizados</h3>
+              <p>Convierte archivos y registros dispersos en tablas
+                útiles para analizar información.</p></div>
+            <span class="case-arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="proceso">
+      <div class="section-heading">
+        <div class="eyebrow">CÓMO TRABAJAMOS</div>
+        <h2>Un proceso claro.<br><span class="gradient-text">Resultados con propósito.</span></h2>
+        <p>Cada proyecto comienza por entender qué necesitas resolver.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <span class="step-number">01</span>
+          <h3>Te escuchamos</h3>
+          <p>Conocemos tu negocio, tus objetivos y el problema que quieres resolver.</p>
+        </article>
+        <article class="process-step">
+          <span class="step-number">02</span>
+          <h3>Revisamos tus datos</h3>
+          <p>Evaluamos los archivos y definimos qué información es útil y necesaria.</p>
+        </article>
+        <article class="process-step">
+          <span class="step-number">03</span>
+          <h3>Construimos</h3>
+          <p>Preparamos una propuesta, organizamos los datos y desarrollamos la solución acordada.</p>
+        </article>
+        <article class="process-step">
+          <span class="step-number">04</span>
+          <h3>Te lo entregamos</h3>
+          <p>Presentamos el resultado y explicamos cómo utilizarlo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section container">
+      <div class="cta-content">
+        <div class="eyebrow">TU SIGUIENTE PASO COMIENZA AQUÍ</div>
+        <h2>Tu negocio genera datos.<br><span class="gradient-text">Haz que trabajen para ti.</span></h2>
+        <p>Cuéntanos qué necesitas organizar, medir o comprender.
+          Exploremos una solución adecuada para tu negocio.</p>
+        <a href="#contacto" class="btn btn-primary">Hablemos de tu proyecto ↗</a>
+      </div>
+      <div class="cta-decoration" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit-center">ND</div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contacto">
+      <div class="contact-copy">
+        <div class="eyebrow">CONTACTO</div>
+        <h2>Hablemos de<br><span class="gradient-text">tus datos.</span></h2>
+        <p>Completa los siguientes campos y prepara un mensaje
+          personalizado para contactarnos por Instagram.</p>
+        <div class="contact-note">
+          <span>✳</span>
+          <p>Cuéntanos tu idea. La primera conversación sirve para
+            conocer tus necesidades y definir el alcance del proyecto.</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">¿Cómo te llamas?</label>
+        <input id="name" name="name" type="text"
+          placeholder="Tu nombre" required maxlength="80">
+
+        <label for="business">Nombre de tu negocio</label>
+        <input id="business" name="business" type="text"
+          placeholder="Ej. Mi negocio" maxlength="100">
+
+        <label for="service">¿Qué necesitas?</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Selecciona un servicio</option>
+          <option>Dashboard de ventas</option>
+          <option>Análisis de datos</option>
+          <option>Reporte de negocio</option>
+          <option>Organización de datos</option>
+          <option>Automatización de tareas</option>
+          <option>Necesito asesoría para elegir</option>
+        </select>
+
+        <label for="details">Cuéntanos un poco más</label>
+        <textarea id="details" name="details" rows="4" maxlength="1000"
+          placeholder="¿Qué problema quieres resolver?"></textarea>
+
+        <button class="btn btn-primary submit-btn" type="submit">
+          Preparar mensaje <span>↗</span>
+        </button>
+        <p class="form-note" id="formNote">
+          Se abrirá Instagram para que puedas enviar tu mensaje.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">N<span>D</span></span>
+        <span>Nexo<span class="blue">Data</span><small>DATA SOLUTIONS</small></span>
+      </a>
+      <p>Transformamos información en oportunidades.</p>
+      <a href="#inicio" class="back-top">Volver arriba ↑</a>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> NexoData. Todos los derechos reservados.</span>
+      <span>Datos con propósito. Decisiones con dirección.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
